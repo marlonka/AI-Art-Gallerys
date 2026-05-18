@@ -158,7 +158,7 @@ export const gallery = {
             'A city becomes atmosphere. Vermeer balances cloud, water, wall, and reflection so carefully that the ordinary skyline feels newly discovered.',
           format: 'landscape',
           featured: true,
-          position: { x: '45%', y: '42%', width: '340px', scale: 1, tilt: '-1deg' },
+          position: { x: '50%', y: '48%', width: '320px', scale: 1, tilt: '-0.3deg' },
         },
         {
           id: 'windmill',
@@ -170,7 +170,7 @@ export const gallery = {
           description:
             'Ruisdael gives the Dutch landscape heroic scale without losing weather, water, and working life. The windmill rises as both structure and national image.',
           format: 'portrait',
-          position: { x: '68%', y: '34%', width: '155px', scale: 1, tilt: '0.8deg' },
+          position: { x: '70%', y: '48%', width: '150px', scale: 0.96, tilt: '0.4deg' },
         },
         {
           id: 'still_life',
@@ -182,7 +182,7 @@ export const gallery = {
           description:
             'Kalf turns luxury objects into a study of reflection, weight, and appetite. The arrangement feels opulent, but the darkness around it is disciplined and exact.',
           format: 'square',
-          position: { x: '28%', y: '60%', width: '170px', scale: 0.92, tilt: '-1.3deg' },
+          position: { x: '30%', y: '48%', width: '165px', scale: 0.92, tilt: '-0.4deg' },
         },
       ],
     },
