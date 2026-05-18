@@ -112,7 +112,7 @@ export const gallery = {
             'Rembrandt transforms a militia portrait into moving theatre. Figures step through darkness with charged gestures, turning civic display into a drama of light, command, and momentum.',
           format: 'landscape',
           featured: true,
-          position: { x: '46%', y: '40%', width: '330px', scale: 1, tilt: '-0.6deg' },
+          position: { x: '50%', y: '48%', width: '320px', scale: 1, tilt: '-0.3deg' },
         },
         {
           id: 'syndics',
@@ -124,7 +124,7 @@ export const gallery = {
           description:
             'A committee looks up from business and catches the viewer entering the room. The composition is economical, direct, and socially precise.',
           format: 'landscape',
-          position: { x: '27%', y: '62%', width: '220px', scale: 0.9, tilt: '1.4deg' },
+          position: { x: '30%', y: '48%', width: '205px', scale: 0.92, tilt: '-0.4deg' },
         },
         {
           id: 'jewish_bride',
@@ -136,7 +136,7 @@ export const gallery = {
           description:
             "Thick paint and restrained gesture create one of Rembrandt's most humane images of tenderness. Gold, red, and shadow fuse into a private exchange.",
           format: 'portrait',
-          position: { x: '70%', y: '35%', width: '150px', scale: 1, tilt: '1.1deg' },
+          position: { x: '70%', y: '48%', width: '150px', scale: 0.96, tilt: '0.4deg' },
         },
       ],
     },
