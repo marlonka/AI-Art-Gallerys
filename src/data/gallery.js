@@ -78,7 +78,7 @@ export const gallery = {
           description:
             'A domestic action becomes monumental through stillness. The bread, ceramic, and stream of milk are held in a quiet geometry that makes ordinary labor feel ceremonial.',
           format: 'portrait',
-          position: { x: '75%', y: '70%', width: '112px', scale: 0.92, tilt: '0.9deg' },
+          position: { x: '76%', y: '77%', width: '104px', scale: 0.9, tilt: '0.2deg' },
         },
         {
           id: 'windmill_preview',
@@ -90,7 +90,7 @@ export const gallery = {
           description:
             'Ruisdael gives the Dutch landscape heroic scale without losing weather, water, and working life.',
           format: 'portrait',
-          position: { x: '62%', y: '29%', width: '104px', scale: 0.9, tilt: '0.8deg' },
+          position: { x: '65%', y: '27%', width: '96px', scale: 0.88, tilt: '0.2deg' },
         },
       ],
     },
