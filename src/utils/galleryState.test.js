@@ -7,10 +7,11 @@ describe('gallery state helpers', () => {
     expect(getInitialRoomId(gallery)).toBe('room_1');
   });
 
-  it('resolves adjacent room ids by direction', () => {
+  it('resolves adjacent room ids in a circular gallery loop', () => {
     expect(getAdjacentRoomId(gallery, 'room_1', 'next')).toBe('room_2');
+    expect(getAdjacentRoomId(gallery, 'room_1', 'previous')).toBe('room_3');
     expect(getAdjacentRoomId(gallery, 'room_2', 'previous')).toBe('room_1');
-    expect(getAdjacentRoomId(gallery, 'room_3', 'next')).toBeNull();
+    expect(getAdjacentRoomId(gallery, 'room_3', 'next')).toBe('room_1');
   });
 
   it('finds artworks across all rooms', () => {

@@ -12,8 +12,17 @@ export function getRoomById(gallery, roomId) {
 
 export function getAdjacentRoomId(gallery, roomId, direction) {
   const room = getRoomById(gallery, roomId);
-  if (direction === 'next') return room.nextRoom;
-  if (direction === 'previous') return room.previousRoom;
+  const roomIndex = gallery.rooms.findIndex((candidate) => candidate.id === room.id);
+  const roomCount = gallery.rooms.length;
+
+  if (direction === 'next') {
+    return room.nextRoom ?? gallery.rooms[(roomIndex + 1) % roomCount]?.id ?? null;
+  }
+
+  if (direction === 'previous') {
+    return room.previousRoom ?? gallery.rooms[(roomIndex - 1 + roomCount) % roomCount]?.id ?? null;
+  }
+
   throw new Error(`Unknown navigation direction: ${direction}`);
 }
 
