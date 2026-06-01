@@ -1,22 +1,54 @@
 {
-  "name": "de-kamer",
+  "name": "inner-aiye",
   "private": true,
   "version": "0.1.0",
+  "description": "A spatial React gallery for photoreal reinterpretations of public-domain masterpieces.",
+  "license": "MIT",
   "type": "module",
+  "author": "Inner AIye contributors",
+  "keywords": [
+    "ai-art",
+    "digital-museum",
+    "gallery",
+    "react",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlonka/AI-Art-Gallerys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marlonka/AI-Art-Gallerys/issues"
+  },
+  "homepage": "https://github.com/marlonka/AI-Art-Gallerys#readme",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "test": "vitest run"
+    "lint": "eslint .",
+    "optimize:artworks": "node scripts/optimize-artworks.mjs",
+    "test": "vitest run",
+    "test:browser": "node scripts/smoke-browser.mjs",
+    "verify": "npm run lint && npm test && npm run build && npm run test:browser",
+    "verify:ci": "npm run lint && npm test && npm run build"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^5.0.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "typescript": "^5.8.0",
-    "vite": "^7.1.0"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.6.0",
     "playwright": "^1.60.0",
-    "vitest": "^3.2.0"
+    "sharp": "^0.34.5",
+    "typescript": "^5.8.0",
+    "vite": "^7.1.0",
+    "vitest": "^4.1.8"
   }
 }

@@ -33,3 +33,17 @@ export function findArtwork(gallery, artworkId) {
   }
   return null;
 }
+
+export function getAdjacentArtworkId(room, artworkId, direction) {
+  const currentIndex = room.artworks.findIndex((candidate) => candidate.id === artworkId);
+
+  if (currentIndex < 0) return null;
+
+  if (direction !== 'next' && direction !== 'previous') {
+    throw new Error(`Unknown artwork navigation direction: ${direction}`);
+  }
+
+  const offset = direction === 'previous' ? -1 : 1;
+  const nextIndex = (currentIndex + offset + room.artworks.length) % room.artworks.length;
+  return room.artworks[nextIndex]?.id ?? null;
+}

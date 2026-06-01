@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a broken interaction, rendering issue, or regression.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: What happened?
+      description: Describe the broken behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How do we reproduce it?
+      description: Include browser, viewport, route, artwork, room, and interaction steps.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add screenshots, recordings, console errors, or logs when possible.
+    validations:
+      required: false
